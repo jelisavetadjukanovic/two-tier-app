@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta charset="utf-8">
+      <title> The Little Eatery </title>
+	  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body onload='js()'>
+
+      <!-- Meni -->
+    <div class="nav">
+	<ul>
+         <li><a class="active" href="index.html"> <h3> Naslovna </h3></a></li>
+         <li><a href="onama.html"> <h3> O nama </h3></a></li>
+         <li><a href="specijaliteti.html"> <h3> Specijaliteti </h3></a></li>
+         <li><a href="kontakt.html"> <h3> Kontakt </h3></a></li>
+		 <li><a href="karijera.html"> <h3> Karijera </h3></a></li>
+    </ul>
+	</div>
+
+   <header>
+    <div class="overlay">
+          <div class="intro-text">
+            <h1> The Little Eatery </h1>
+			<img src="img/contactus.jpg">
+          </div>
+    </div>
+   </header>		
+	
+	<div id="contact" class="text-center">
+  <div class="container text-center">
+
+<div class="row">
+  <div class="column">    <div class="col-md-4">
+      <h3>Rezervacije</h3>
+      <div class="contact-item">
+        <p>Pozovite</p>
+        <p>(381) 66 654 3210</p>
+      </div>
+    </div></div>
+  <div class="column">    <div class="col-md-4">
+      <h3> Adresa </h3>
+      <div class="contact-item">
+        <p> Sarajevska 23, </p>
+        <p> Beograd, Srbija </p>
+      </div>
+    </div></div>
+  <div class="column">    <div class="col-md-4">
+      <h3> Radno vreme </h3>
+      <div class="contact-item">
+        <p> Ponedeljak - Četvrtak: 10:00h - 23:00h</p>
+        <p> Petak - Nedelja: 11:00h - 23:00h</p>
+      </div>
+    </div></div>
+	
+    </div>
+</div> 
+
+<!-- Kontakt sekcija -->
+		<div id="formular" >
+			 <h2> POZOVI ILI NAS KONTAKTIRAJ PUTEM MEJLA! </h2>
+			 
+		<form name="forma" method="post" action="kontakt.php">
+                   <div class="red">
+                    <div class="label">
+                        <label for="tbIme"> Ime: </label>
+                        <span id="spantbName"></span>
+                    </div>
+                    <div class="element-forme">
+                        <input type="text" id="tbName" name="tbIme" required="yes"/>
+                    </div>
+                   </div>
+                   <div class="red">
+                    <div class="label">
+                        <label for="tbPrezime"> Prezime: </label>
+                        <span id="spantbPrezime"></span>
+                    </div>
+                    <div class="element-forme">
+                        <input type="text" id="tbPrezime" name="tbPrezime"  required="yes"/>
+                    </div>
+                   </div>
+                   <div class="red">
+                    <div class="label">
+                        <label for="tbTelefon"> Telefon: </label>
+						<span id="spantbTelefon"  ></span>
+                    </div>
+                    <div class="element-forme">
+                        <input type="text" id="tbTelefon" name="tbTelefon" required="yes"/>
+	
+                    </div>
+                   </div>
+                   <div class="red">
+                    <div class="label">
+                        <label for="taPoruka"> Poruka: </label>
+                        <span id="spantaPoruka" ></span>
+                    </div>
+                    <div class="element-forme">
+                        <textarea id="taPoruka" name="taPoruka" required="yes"></textarea>
+                    </div>
+                   </div>
+                    <input type='submit' id='dugme' value='Pošalji' onclick="provera();"/>
+				   </form>
+           </div>
+  
+  <footer>
+  <div class="copyright">
+      <p> &copy;  2022 - Made by Jelisaveta Đukanović </p>
+  </div> 
+</footer>
+
+</body>
+
+</html>

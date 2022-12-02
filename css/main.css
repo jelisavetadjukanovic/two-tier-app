@@ -1,0 +1,130 @@
+
+body, html {
+  background-color: white;
+  background-size: 50%;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+h2 {
+  color: black;
+  text-align: center;
+}
+h3 {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: sylfaen;
+  text-align: center;
+}
+
+form {
+  font-family: sylfaen;
+  text-align: center;
+  color: black;
+  padding: 10px 1px;
+}
+
+.nav li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px 15px;
+  font-family: sylfaen;
+  text-align: center;
+  color: black;
+  margin: 65px;
+}
+
+.nav a:hover {
+  color: red;
+}
+
+input[type=text] {
+  width: 20%;
+  border: 2px solid gray;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #A9A9A9;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+textarea {
+  width: 50%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+.features-item {
+  float: left;
+  width: 30.33%;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#contact .contact-item p {
+	font-size: 15px;
+	color: #777;
+}
+
+#contact h3 {
+	position: relative;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 400;
+	color: #aaa;
+	padding: 20px 0;
+}
+#contact h3::after {
+	position: absolute;
+	content: "";
+	background: #d43031;
+	height: 2px;
+	width: 40px;
+	bottom: 0;
+	margin-left: -20px;
+	left: 50%;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+	  background-color: #D3D3D3;
+}

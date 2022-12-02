@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta charset="utf-8">
+      <title> The Little Eatery </title>
+	  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+<!-- Meni -->
+    <div class="nav">
+	<ul>
+         <li><a class="active" href="index.html"> <h3> Naslovna </h3></a></li>
+         <li><a href="onama.html"> <h3> O nama </h3></a></li>
+         <li><a href="specijaliteti.html"> <h3> Specijaliteti </h3></a></li>
+         <li><a href="kontakt.html"> <h3> Kontakt </h3></a></li>
+		 <li><a href="karijera.html"> <h3> Karijera </h3></a></li>
+    </ul>
+	</div>
+
+   <header>
+    <div class="overlay">
+          <div class="intro-text">
+            <h1> The Little Eatery </h1>
+			<img src="img/career.jpg">
+          </div>
+    </div>
+   </header>
+
+<!-- Sekcija karijera - forma -->
+			<div class="career">
+				    <h2> ZAPOČNI SVOJU KARIJERU KOD NAS! </h2>
+			
+				<form name="career"  method="post" action="karijera.php">
+							                  <div class="red">
+                    <div class="label1">
+                        <label for="Ime"> Ime: </label>
+                        <span id="Name"></span>
+                    </div>
+                    <div class="element-forme1">
+                        <input type="text" id="Ime" name="Ime" required="yes"/>
+                    </div>
+                   </div>
+                   <div class="red">
+                    <div class="label1">
+                        <label for="Prezime"> Prezime: </label>
+                        <span id="Prezime"></span>
+                    </div>
+                    <div class="element-forme1">
+                        <input type="text" id="Prezime" name="Prezime"  required="yes"/>
+                    </div>
+                   </div>
+                   <div class="red">
+                    <div class="label1">
+                        <label for="Telefon"> Telefon: </label>
+						<span id="Telefon"  ></span>
+                    </div>
+                    <div class="element-forme1">
+                        <input type="text" id="Telefon" name="Telefon" required="yes"/>
+                    </div>
+                   </div>
+				   <div class="red">
+                    <div class="label1">
+                        <label for="Mejl"> Mejl: </label>
+						<span id="Mejl"  ></span>
+                    </div>
+                    <div class="element-forme1">
+                        <input type="text" id="Mejl" name="Mejl" required="yes"/>
+                    </div>
+                   </div>
+                   <div class="red">
+                    <div class="label1">
+                        <label for="Pozicija"> Pozicija za koju iskazujete interesovanje: </label>
+                        <span id="Pozicija" ></span>
+                    </div>
+					<div class="element-forme1">
+                <select id="Pozicija" name="Pozicija" required="yes">
+					<option value="Kuvar/ica"> Kuvar/ica </option>
+					<option value="Šanker/ka"> Šanker/ka </option>
+					<option value="Konobar/ica"> Konobar/ica </option>
+					<option value="Čistač/ica"> Čistač/ica </option>
+				</select>
+				   </div>
+				   
+                    <input type='submit' id='dugme' value='Pošalji prijavu' onclick="provera();"/>
+				   </form>
+           </div>	
+						
+<footer>
+  <div class="copyright">
+      <p> &copy;  2022 - Made by Jelisaveta Đukanović </p>
+  </div> 
+</footer>
+
+</body>
+
+</html>
